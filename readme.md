@@ -1,4 +1,4 @@
-# Car Sales Data Analysis
+<h1 align="center">Car Sales Data Pipeline</h1>
 
 Analyze and visualize trends in a large synthetic car sales dataset. This project provides a modular pipeline for data cleaning, insight extraction, and visualization, enabling you to explore car sales patterns, compare brands, and predict future sales.
 
@@ -154,8 +154,8 @@ This will generate the selected plots (saved in `output/`) and print insights to
 
 > [!Note]
 > All plots are saved in the `output/` directory. <br>
-> The code is modular; data loading, insights, and plotting are separated for clarity and maintainability. <br>
-> The dataset is synthetic and intended for demonstration and educational purposes. <br>
+> Code is modular; data loading, insights, and plotting are separated for clarity and maintainability. <br>
+> Dataset is synthetic and intended for demonstration and educational purposes. <br>
 
 ---
 
