@@ -10,12 +10,12 @@ Analyze and visualize trends in a large synthetic car sales dataset. This projec
       <h3 align="center">Global Top Brand</h3>
       <img width="auto" src="output\global_top_brand.png">
     </td><td>
-      <h3 align="center">Top Selling Brand</h3>
-      <img width="auto" src="output\top_selling_brand_usa.png">  </td>
+      <h3 align="center">Sales Comparison</h3> 
+      <img width="auto" src="output\sales_comparison.png">  </td>
   </tr>
     <tr><td>
-      <h3 align="center">Sales Comparison</h3>
-      <img width="auto" src="output\sales_comparison.png">
+      <h3 align="center">Top Selling Brand</h3>
+      <img width="auto" src="output\top_selling_brand_usa.png">
     </td><td>
       <h3 align="center">Future Prediction</h3>
       <img width="auto" src="output\usa_toyota_2025_prediction.png">
@@ -39,12 +39,12 @@ Analyze and visualize trends in a large synthetic car sales dataset. This projec
 ```
 .
 ├── dataset.py         # Script to download the dataset from KaggleHub
-    └── car_sales_dataset_with_person_details.csv  # (Downloaded dataset)
+├── dataset/           # Folder for all CSV files
+│   └── car_sales_dataset_with_person_details.csv  # (Downloaded dataset)
 ├── data_utils.py      # Data loading and cleaning functions
 ├── insights.py        # Data querying and insight functions 
-├── plotting.py        # All plotting functions (plots saved to output/)
-├── main.py            # Main script
-├── dataset/           # Folder for all CSV files
+├── plotting.py        # All plotting functions
+├── main.py            # Main script       
 ├── output/            # Folder for generated plots
 ```
 
@@ -83,7 +83,7 @@ This will download the dataset and print the file path. The CSV will be placed i
 
 ### 1. Configure Your Analysis
 
-Open `main.py` and edit the parameters at the top to select the country, brand, years, and brands you want to analyze:
+Open `main.py` and edit the parameters at the top to select the country, brand, and years you want to analyze:
 
 ```python
 COUNTRY = "USA"
@@ -97,7 +97,7 @@ TOTAL_SALES_YEAR = 2024
 
 ### 2. Select the Insights/Plots to Run
 
-In `main.py`, comment or uncomment the function calls to run only the analyses or plots you want.  
+In `main.py`, comment or uncomment the function calls to run only the analyses or plots you need.
 Each block is independent and can be enabled/disabled as needed.
 
 ### 3. Run the Main Script
@@ -124,7 +124,7 @@ This will generate the selected plots (saved in `output/`) and print insights to
 ## Customization
 
 - To analyze different countries, brands, or years, change the lists in `main.py`.
-- To generate a different plot, comment/uncomment the relevant function calls in `main.py`.
+- To generate different plots, comment or uncomment the relevant function calls in `main.py`.
 - All plots are saved in the `output/` directory for easy access.
 
 ---
