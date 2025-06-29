@@ -153,9 +153,9 @@ This will generate the selected plots (saved in `output/`) and print insights to
 ---
 
 > [!Note]
-- All plots are saved in the `output/` directory.
-- The code is modular: data loading, insights, and plotting are separated for clarity and maintainability.
-- The dataset is synthetic and intended for demonstration and educational purposes.
+> All plots are saved in the `output/` directory.
+> The code is modular: data loading, insights, and plotting are separated for clarity and maintainability.
+> The dataset is synthetic and intended for demonstration and educational purposes.
 
 ---
 
