@@ -7,36 +7,20 @@ Analyze and visualize trends in a large synthetic car sales dataset. This projec
 ## Visualization
 
 <table><tr><td>
-      <h3 align="center">Heatmap of feature correlations matrix</h3>
+      <h3 align="center">Global Top Brand</h3>
       <img width="auto" src="output\global_top_brand.png">
     </td><td>
-      <h3 align="center">Bar plot of feature importance </h3>
+      <h3 align="center">Top Selling Brand</h3>
       <img width="auto" src="output\top_selling_brand_usa.png">  </td>
   </tr>
     <tr><td>
-      <h3 align="center">Learning curve of the best model </h3>
+      <h3 align="center">Sales Comparison</h3>
       <img width="auto" src="output\sales_comparison.png">
     </td><td>
-      <h3 align="center">Popularity distribution </h3>
+      <h3 align="center">Future Prediction</h3>
       <img width="auto" src="output\usa_toyota_2025_prediction.png">
     </td></tr>
 </table>
-
----
-
-## Project Structure
-
-```
-.
-├── dataset/           # Folder for all CSV files
-├── output/            # Folder for generated plots
-├── dataset.py         # Script to download the dataset from KaggleHub
-    └── car_sales_dataset_with_person_details.csv  # (Downloaded dataset)
-├── data_utils.py      # Data loading and cleaning functions
-├── insights.py        # Data querying and insight functions 
-├── plotting.py        # All plotting functions (plots saved to output/)
-├── main.py            # Main script
-```
 
 ---
 
@@ -50,13 +34,29 @@ Analyze and visualize trends in a large synthetic car sales dataset. This projec
 
 ---
 
+## Directory Structure
+
+```
+.
+├── dataset.py         # Script to download the dataset from KaggleHub
+    └── car_sales_dataset_with_person_details.csv  # (Downloaded dataset)
+├── data_utils.py      # Data loading and cleaning functions
+├── insights.py        # Data querying and insight functions 
+├── plotting.py        # All plotting functions (plots saved to output/)
+├── main.py            # Main script
+├── dataset/           # Folder for all CSV files
+├── output/            # Folder for generated plots
+```
+
+---
+
 ## Getting Started
 
 ### 1. Clone the Repository
 
 ```bash
-git clone <your-repo-url>
-cd CarSales
+git clone https://github.com/karmaniket/CarSalesPipeline.git
+cd CarSalesPipeline
 ```
 
 ### 2. Install Requirements
@@ -112,12 +112,12 @@ This will generate the selected plots (saved in `output/`) and print insights to
 
 ## Example Analyses
 
-- **Compare sales** for selected countries, brands, and years.
-- **Show total sales** for a specific brand/country/year.
-- **Visualize the global top brand** by number of countries each year.
-- **Heatmap** of top brands by country and year.
-- **Trend** of top-selling brands in a specific country.
-- **Predict future sales** for a brand in a country for a specific year (using linear regression).
+- Compare sales for selected countries, brands, and years.
+- Show total sales for a specific brand/country/year.
+- Visualize the global top brand by number of countries each year.
+- Heatmap of top brands by country and year.
+- Trend of top-selling brands in a specific country.
+- Predict future sales for a brand in a country for a specific year (using linear regression).
 
 ---
 
@@ -131,13 +131,13 @@ This will generate the selected plots (saved in `output/`) and print insights to
 
 ## File Descriptions
 
-- **data_utils.py:** Loads and cleans the raw dataset, standardizing columns and aggregating sales.
-- **insights.py:** Provides functions to extract insights (top brands, global leaders, sales totals, predictions).
-- **plotting.py:** Contains all plotting functions (heatmaps, bar charts, line plots, prediction plots).
-- **main.py:** The main entry point. Edit this file to select and run your desired analyses.
-- **dataset.py:** Downloads the dataset from KaggleHub.
-- **dataset/**: Stores the raw and cleaned CSV files.
-- **output/**: Stores all generated plots.
+- `dataset.py` : Downloads the dataset from KaggleHub.
+- `data_utils.py` : Loads and cleans the raw dataset, standardizing columns and aggregating sales.
+- `insights.py` : Provides functions to extract insights (top brands, global leaders, sales totals, predictions).
+- `plotting.py` : Contains all plotting functions (heatmaps, bar charts, line plots, prediction plots).
+- `main.py` : The main entry point. Edit this file to select and run your desired analyses.
+- `dataset/` : Stores the raw and cleaned CSV files.
+- `output/` : Stores all generated plots.
 
 ---
 
@@ -152,8 +152,7 @@ This will generate the selected plots (saved in `output/`) and print insights to
 
 ---
 
-## Notes
-
+> [!Note]
 - All plots are saved in the `output/` directory.
 - The code is modular: data loading, insights, and plotting are separated for clarity and maintainability.
 - The dataset is synthetic and intended for demonstration and educational purposes.
