@@ -20,7 +20,7 @@ Analyze and visualize trends in a large synthetic car sales dataset. This projec
     </td><td>
       <h3 align="center">Heatmap of Top Brands</h3>
       <i>Heatmap visualizing the top brand for each country and year.</i><br><br>
-      <img width="auto" src="output\usa_toyota_2025_prediction.png">
+      <img width="auto" src="output\top_brand_heatmap.png">
     </td></tr>
 </table>
   <h3 align="center">Future Prediction</h3>
