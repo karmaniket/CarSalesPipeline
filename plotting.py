@@ -19,7 +19,7 @@ def plot_heatmap(top_per_country_year):
     plt.title("Top-Selling Brands by Country")
     plt.xlabel("Year")
     plt.ylabel("Country")
-    plt.tight_layout(rect=[0, 0, 0.95, 1])
+    plt.tight_layout(rect=[0, 0, 0.85, 1])
     plt.savefig("output/top_brand_heatmap.png", bbox_inches='tight')
     plt.show()
     plt.close()
