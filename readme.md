@@ -39,13 +39,13 @@ Analyze and visualize trends in a large synthetic car sales dataset. This projec
 
 ```bash
 .
-├── dataset.py                     # Script to download the dataset from KaggleHub
-├── dataset/                       # Folder for all CSV files
-├── data_utils.py                  # Data loading, cleaning functions, standardizing columns, aggregating sales
-├── insights.py                    # Functions to extract insights
-├── plotting.py                    # All plotting functions
-├── main.py                        # Main script       
-├── output/                        # Folder for all generated plots
+├── dataset.py               # Script to download the dataset from KaggleHub
+├── dataset/                 # Folder for all CSV files
+├── data_utils.py            # Data loading, cleaning functions, standardizing columns, aggregating sales
+├── insights.py              # Functions to extract insights
+├── plotting.py              # All plotting functions
+├── main.py                  # Main script       
+├── output/                  # Folder for all generated plots
 ```
 
 ## Setup
@@ -115,5 +115,9 @@ This will generate the selected plots (saved in `output/`) and print insights to
 - All plots will be saved in the `output/` directory for easy access
 
 > [!Note]
-> Code is modular; data loading, insights, and plotting are separated for clarity and maintainability <br>
-> Dataset is synthetic and intended for demonstration and educational purposes <br>
+>- Code is modular; data loading, insights, and plotting are separated for clarity and maintainability <br>
+>- Dataset is synthetic and intended for demonstration and educational purposes <br>
+
+## Source and Attribution
+
+[Synthetic Car Sales Dataset over Million records](https://www.kaggle.com/datasets/jayavarman/synthetic-car-sales-dataset-over-million-records) dataset from Kaggle.
