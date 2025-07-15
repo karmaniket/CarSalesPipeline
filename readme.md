@@ -23,7 +23,7 @@ Analyze and visualize trends in a large synthetic car sales dataset. This projec
       <img width="auto" src="output\top_brand_heatmap.png">
     </td></tr>
 </table>
-  <h3 align="center">Future Prediction</h3>
+  <h3 align="center">Future Sales Prediction</h3>
   <i>Bar chart showing historical sales and predicted sales for a brand/country/year using linear regression.</i><br><br>
   <img width="auto" src="output\usa_toyota_2025_prediction.png">
 
