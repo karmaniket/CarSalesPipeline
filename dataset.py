@@ -1,12 +1,8 @@
-# Download the dataset from KaggleHub
 import kagglehub
 import os
 
-# Download the dataset
 path = kagglehub.dataset_download("jayavarman/synthetic-car-sales-dataset-over-million-records")
 
-# Get the CSV file path
 csv_files = [f for f in os.listdir(path) if f.endswith('.csv')]
 dataset_file = os.path.join(path, csv_files[0])
-
 print("Dataset downloaded to:", dataset_file)
